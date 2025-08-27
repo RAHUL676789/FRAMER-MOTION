@@ -1,12 +1,52 @@
-# React + Vite
+# 🎬 Framer Motion 0 → Master: Daily Challenges
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is my **daily learning journey** of mastering [Framer Motion](https://www.framer.com/motion/) with **React + Tailwind CSS**.  
+Each day I practice concepts through **3–4 mini-projects** — starting from beginner-level hover/tap effects to advanced UI animations.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 What's Inside?
+✅ Beginner to Advanced Framer Motion concepts  
+✅ Daily mini-projects (buttons, cards, loaders, transitions)  
+✅ Clean & reusable React components  
+✅ Real-world UI/UX animation practices  
+✅ Organized by **Day-wise folders** for easy navigation  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📅 Progress Tracker
+- **Day 1** → Buttons (Hover, Tap, Glow, 3D Press, Color Cycle, Icon Button)  
+- **Day 2** → Coming soon: Cards + Spring Physics (stiffness, damping, delay)  
+- *(Daily updates will continue until mastery)*  
+
+---
+
+## 🛠️ Tech Stack
+- **React.js** ⚛️  
+- **Framer Motion** 🎥  
+- **Tailwind CSS** 🎨  
+
+---
+
+## 📸 Preview
+*(Add screenshots / GIFs of your buttons & animations here for better visualization)*  
+
+---
+
+## 🎯 Goal
+To master **Framer Motion** through consistent **daily practice** and build a strong portfolio of animation-rich UI components.  
+
+---
+
+## 🤝 Contributing
+This is a personal learning repo, but feel free to suggest ideas, improvements, or share your own Framer Motion tricks.  
+
+---
+
+## 📌 Connect With Me
+💼 [LinkedIn](https://www.linkedin.com/in/rahul-lodhi/)  
+📂 [GitHub Projects](https://github.com/RAHUL676789/FRAMER-MOTION)  
+
+---
+
+⚡ *Learning by building. One animation at a time.*  
