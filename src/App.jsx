@@ -1,18 +1,45 @@
-import React from 'react'
+// App.jsx
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import "./App.css"
-import Day1Button from './Components/Day1/Button'
-// import FadeExample from './Components/day2/FadeInFAdeOut'
-import FadeInFAdeOut from './Components/day2/FadeInFAdeOut'
-import SlideInCard from './Components/day2/SlideLEft'
+import Contact from "./Pages/Contact";
+import Button from "./Pages/Button";
 
-const App = () => {
+function AnimatedRoutes() {
+  const location = useLocation();
+
   return (
-    <div>
-      {/* <Day1Button/> */}
-      {/* <FadeInFAdeOut/> */}
-      <SlideInCard/>
-    </div>
-  )
+    <AnimatePresence mode="wait">
+      <Button/>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+        <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
+        <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+      </Routes>
+    </AnimatePresence>
+  );
 }
 
-export default App
+function PageWrapper({ children }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}   // page entry from right
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}     // page exit to left
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className=""
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <AnimatedRoutes />
+    </Router>
+  );
+}
