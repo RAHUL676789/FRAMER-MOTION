@@ -1,45 +1,14 @@
-// App.jsx
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import React from 'react'
 import "./App.css"
-import Contact from "./Pages/Contact";
-import Button from "./Pages/Button";
+import BouncingLoader from './Components/Day5/BouncingLoader'
+import DemoLoader from './Components/Day5/DemoLoader'
 
-function AnimatedRoutes() {
-  const location = useLocation();
-
+const App = () => {
   return (
-    <AnimatePresence mode="wait">
-      <Button/>
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-        <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
-        <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-      </Routes>
-    </AnimatePresence>
-  );
+    <div>
+      <DemoLoader/>
+    </div>
+  )
 }
 
-function PageWrapper({ children }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: 100 }}   // page entry from right
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}     // page exit to left
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-      className=""
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export default function App() {
-  return (
-    <Router>
-      <AnimatedRoutes />
-    </Router>
-  );
-}
+export default App
